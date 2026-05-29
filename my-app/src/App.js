@@ -8,7 +8,7 @@ import Alert from "./components/Alert";
 
 
   import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route,
   } from "react-router-dom";
