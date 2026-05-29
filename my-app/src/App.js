@@ -60,7 +60,7 @@ function App() {
   };
   return (
     <>
-      <Router basename= "/TextUtils"> 
+      <Router> 
         <Navbar title="TextUtils" 
        
         mode= {mode}
