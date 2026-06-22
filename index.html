@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+        // let a = 34;
+        // let a = "This is my string";
+        // console.log(a);
+
+        
+
+
+        // function hello() {
+        //     console.log("I'm Faizan");
+        // }
+
+
+        let arr = [34,21, 25];
+        console.log(this);
+        //   function myfunc(number) {
+        //         console.log("The number is " + this);
+        //     }
+
+        let myfunc = ( number )=> {
+            console.log("The number is " + this);
+           }
+            myfunc();
+        
+
+
+        document.addeventListener("click", function click() {
+           console.log("clicked");
+        //    alert("hello")
+        let conf = confirm ("Are you sure you want to delete this page");
+        console.log(conf);
+        });
+
+
+        let mobj = {
+            a: this,
+            myfunc: function(number) {
+                console.log(this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(()=> {
+console.log("yayyy");
+        }, 3000);
+        console.log("main neeche wali script hoon");
+      
+    </script>
+</head>
+<body>
+    I am Learning Javascript 
+</body>
+</html>
